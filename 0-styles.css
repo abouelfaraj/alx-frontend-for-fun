@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+
+}
+
+.icon {
+	display: inline-block;
+	background-image: url('0-sprite.png');
+	height: 40px;
+	width: 80px;
+}
+
+.icon .i-html {
+	background-position: 0 0;
+}
+
+.icon .i-css {
+        background-position: -20px 0;
+}
+
+.icon .i-js {
+        background-position: -40px 0;
+}
