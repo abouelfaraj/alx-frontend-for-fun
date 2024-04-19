@@ -1,0 +1,68 @@
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 30px;
+}
+
+.toggle-cb {
+    display: none;
+}
+
+.toggle-label {
+    display: block;
+    width: 85px;
+    height: 25px;
+    border-radius: 15px;
+    background-color: #e72727;
+    cursor: pointer;
+    position: relative;
+}
+
+.toggle-inner {
+    position: absolute;
+    left: -5px;
+    top: -7px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fcf5f5;
+    transition: transform 0.3s;
+}
+
+.toggle-cb:checked + .toggle-label .toggle-switch::after {
+    content: "Yes";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+}
+
+.toggle-cb:not(:checked) + .toggle-label .toggle-switch::after {
+    content: "No";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    color: #ccc;
+    transform: translate(-50%, -50%);
+}
+.toggle-cb:checked + .toggle-label .toggle-inner {
+    transform: translateX(50px);
+}
+
+.toggle-cb:checked {
+    pointer-events: none;
+}
+
+.toggle-cb:not(:checked) + .toggle-label {
+    background-color: #ddd; /* Change background color */
+}
+
+.toggle-cb:not(:checked) + .toggle-switch {
+    content: 'No'; /* Change background color */
+}
+.toggle-cb:not(:checked) + .toggle-label .toggle-inner {
+    background-color: #fcf5f5; /* Change inner circle color */
+}
