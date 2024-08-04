@@ -666,3 +666,11 @@ form {
 	padding: 1rem 0;
 	margin: 0;
 }
+
+fieldset {
+  display: flex;             /* Use flexbox layout */
+  flex-direction: column;    /* Stack items vertically */
+  justify-content: flex-start; /* Align items to the start of the container */
+  border: none;              /* Remove border */
+  padding: 0 0 2rem 0;       /* Set bottom padding to 2rem, no padding on other sides */
+}
