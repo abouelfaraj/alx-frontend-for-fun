@@ -1,0 +1,17 @@
+// Variables
+$text-color: #3D3D3D;
+$background-color: #6d6d6d;
+
+// Assign variables
+body {
+	color: $text-color;
+	background-color: $background-color;
+}
+
+p {
+	color: $text-color;
+}
+
+h2 {
+	background-color: $background-color;
+}
