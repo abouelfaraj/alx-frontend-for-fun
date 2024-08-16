@@ -2,8 +2,6 @@
 
 @import '103-sort_list';
 
-$names: '';
 @each $name in $list_to_sort {
-  $names: #{$names} #{$name};
+  @debug $name;
 }
-@debug $names;
