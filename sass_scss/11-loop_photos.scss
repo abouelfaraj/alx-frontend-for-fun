@@ -1,10 +1,9 @@
 // Loop
 
-//@import '11-photos';
-$list-names: julien john sam damian;
+@import '11-photos';
 
 @each $name in $list-names {
-    .#{lowercase($name)} {
-        background-image: url('images/#{lowercase($name)}.jpg');
-    }
+  .photo-#{$name} {
+    background-image: url('photos/#{$name}.jpg');
+  }
 }
