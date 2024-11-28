@@ -1,10 +1,9 @@
 /* Assign hover
 chnage buttons color on hover */
-$btn-color: #FF0000;
-$hover-color: #00FF00;
+
 button {
-    color: $btn-color;
-    &:hover {
-        color: $hover-color;
-    }
+	color: #FF0000;
+    	&:hover {
+		color: #00FF00;
+    	}
 }
